@@ -7,19 +7,20 @@ const publicationSchema = new Schema({
         type: String,
         
     },
-    description :{
+    body :{
         type: String,
     },
     file :{
-        type:Buffer,
+        type:String,
     },
     commentaires:{
         type :Array,default:[],
     }
 
+
 }, { timestamps: true })
 
 
 
-const publication = mongoose.model('Publication', publicationSchema);
+const publication = mongoose.model('PublicationS', publicationSchema);
 module.exports = publication

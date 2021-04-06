@@ -19,8 +19,7 @@ app.use(cors())
 app.use(morgan('tiny'))
 
  app.use("/api/publication",require("./router/api/pub"))
- app.use("/api/commentaire",require("./router/api/com"))
-
+ 
 
 
 
